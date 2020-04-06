@@ -835,6 +835,10 @@ Buttons
   font-size: 14px;
   cursor: pointer; }
 
+.btn-right {
+  float:right;
+}
+
 .btn-group label {
   color: #ffffff !important;
   margin-bottom: 0px; }
