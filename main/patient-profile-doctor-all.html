@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Patient Profile Doctor See All</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header single-column card-no-border mini-sidebar">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon -->
+                        <b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span>
+                            <!-- dark Logo text -->
+                            <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo text -->
+                            <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <h3 class="text-white nav-link">心脑血管外科</h3>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="../assets/images/users/5.jpg" alt="user" class="profile-pic" /></a>
+                            <div class="dropdown-menu dropdown-menu-right animated flipInY">
+                                <ul class="dropdown-user">
+                                    <li>
+                                        <div class="dw-user-box">
+                                            <div class="u-img"><img src="../assets/images/users/5.jpg" alt="user"></div>
+                                            <div class="u-text">
+                                                <h4>王小明医生</h4>
+
+                                                <p class="text-muted">心脑血管外科医生</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="login-doctor.html"><i class="fa fa-power-off"></i> 登出</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-6 col-8 align-self-center">
+                        <h3 class="text-themecolor mb-0 mt-0">病人界面</h3>
+                    </div>
+                    <div class="col-md-6 col-4 align-self-center">
+                        <a href="doctor-patient.html"><button class="btn float-right hidden-sm-down btn-info">
+                                返回主页面</button>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <!-- Row -->
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-md-12 col-lg-4 col-xlg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <center class="mt-4"> <img src="../assets/images/users/4.jpg" class="img-circle"
+                                        width="100" />
+                                    <h4 class="card-title mt-2">韩梅梅</h4>
+                                    <h6 class="card-subtitle">性别：女</h6>
+                                    <h6 class="card-subtitle">年龄：48</h6>
+                                    <h6 class="card-title mt-2">住院号：12345678</h6>
+                                    <h6 class="card-subtitle">入院时间：2020年3月2日</h6>
+
+                                    <div class="col-8">
+                                        <div class="dropdown float-right mr-2 hidden-sm-down">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false"> 护理级别：1 </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">护理级别：2</a> <a
+                                                    class="dropdown-item" href="#">护理级别：3</a>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center justify-content-md-center">
+                                            <div class="dropdown float-right mr-2 hidden-sm-down">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 61号病床 </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">62号病床</a>
+                                                    <a class="dropdown-item" href="#">63号病床</a> <a class="dropdown-item" href="#">64号病床</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <hr>
+                                    </div>
+                                    <div>
+                                        <br/>
+                                    </div>
+                                    <td>
+                                        <div class="notify round"><img src="../assets/icons/1.jpg"
+                                                width="48" class="img-circle" alt="img"><span
+                                                class="heartbit"></span></div>
+                                        <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                class="img-circle" alt="img"></div>
+                                        <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                class="img-circle" alt="img"></div>
+                                        <div class="round"><img src="../assets/icons/4.jpg" width="48"
+                                                class="img-circle" alt="img"></div>
+                                    </td>
+                                </center>
+                            </div>
+                            <div>
+                                <hr>
+                            </div>
+                            <div class="card-body">
+                                <medium class="text-muted">医生的记录 </medium>
+                                <p> </p>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5"></textarea>
+                                </div>
+                                <div class="form-actions">
+                                    <div class="card-body">
+                                        <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i>
+                                            保存</button>
+                                        <button type="button" class="btn btn-dark">取消</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <hr>
+                            </div>
+                            <div class="card-body">
+                                <medium class="text-muted">护士的记录 </medium>
+                                <p> </p>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5"
+                                        placeholder="症状有：心悸、气短、端坐呼吸、夜间阵发性呼吸困难、胸骨后的压迫性或紧缩性疼痛、胸闷不适、水肿、发绀、晕厥、咳嗽咯血、虚弱、嗳气、上腹痛、恶心、呕吐；左后背痛、左手臂痛等"
+                                        readonly=""></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-md-12 col-lg-8 col-xlg-9">
+                        <!--BP-->
+                        <!-- Column -->
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-lg-4 col-xlg-3 col-md-4 col-sm-12 border-right">
+                                    <div class="card-body">
+                                        <div class="d-flex no-block align-items-center">
+                                            <div>
+                                                <h1>血压</h1>
+                                                <h6 class="card-subtitle"></h6>
+                                            </div>
+                                            <div class="ml-auto">
+                                                <select class="custom-select float-right">
+                                                    <option selected="">4月5日</option>
+                                                    <option value="1">4月4日</option>
+                                                    <option value="2">4月3日</option>
+                                                    <option value="3">4月2日</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 mt-5">
+                                                <h1 class="mb-0 font-light">135</h1>
+                                                <h6 class="text-muted">收缩压</h6>
+                                            </div>
+                                            <div class="col-lg-12 mt-5">
+                                                <h1 class="mb-0 font-light">92</h1>
+                                                <h6 class="text-muted">舒张压</h6>
+                                            </div>
+                                            <div class="col-lg-12 mt-5" id="m-ecg">
+                                                <h1 class="mb-0 font-light">113</h1>
+                                                <h6 class="text-muted">平均压</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-xlg-9 col-md-8 col-sm-12 align-self-center">
+                                    <div class="card-body">
+                                        <div id="bp" style="width:100%; height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
+                        <!--ECG-->
+                        <!-- Column -->
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-lg-4 col-xlg-3 col-md-4 col-sm-12 border-right">
+                                    <div class="card-body">
+                                        <div class="d-flex no-block align-items-center">
+                                            <div>
+                                                <h1>ECG</h1>
+                                                <h6 class="card-subtitle"></h6>
+                                            </div>
+                                            <div class="ml-auto">
+                                                <select class="custom-select float-right">
+                                                    <option selected="">4月5日</option>
+                                                    <option value="1">4月4日</option>
+                                                    <option value="2">4月3日</option>
+                                                    <option value="3">4月2日</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 mt-5">
+                                                <h1 class="mb-0 font-light">87</h1>
+                                                <h6 class="text-muted">最高心率</h6>
+                                            </div>
+                                            <div class="col-lg-12 mt-5">
+                                                <h1 class="mb-0 font-light">79</h1>
+                                                <h6 class="text-muted">最低心率</h6>
+                                            </div>
+                                            <div class="col-lg-12 mt-5" id="m-sp">
+                                                <h1 class="mb-0 font-light">83</h1>
+                                                <h6 class="text-muted">平均心率</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-xlg-9 col-md-8 col-sm-12 align-self-center">
+                                    <div class="card-body">
+                                        <div id="ecg" style="width:100%; height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
+                        <!--SPO2-->
+                        <!-- Column -->
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-lg-4 col-xlg-3 col-md-4 col-sm-12 border-right">
+                                    <div class="card-body">
+                                        <div class="d-flex no-block align-items-center">
+                                            <div>
+                                                <h1>血氧</h1>
+                                                <h6 class="card-subtitle"></h6>
+                                            </div>
+                                            <div class="ml-auto">
+                                                <select class="custom-select float-right">
+                                                    <option selected="">4月5日</option>
+                                                    <option value="1">4月4日</option>
+                                                    <option value="2">4月3日</option>
+                                                    <option value="3">4月2日</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 mt-5">
+                                                <h1 class="mb-0 font-light">97</h1>
+                                                <h6 class="text-muted">最高血氧值</h6>
+                                            </div>
+                                            <div class="col-lg-12 mt-5">
+                                                <h1 class="mb-0 font-light">86</h1>
+                                                <h6 class="text-muted">最低血氧值</h6>
+                                            </div>
+                                            <div class="col-lg-12 mt-5" id="m-temp">
+                                                <h1 class="mb-0 font-light">91</h1>
+                                                <h6 class="text-muted">平均血氧值</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-xlg-9 col-md-8 col-sm-12 align-self-center">
+                                    <div class="card-body">
+                                        <div id="sp" style="width:100%; height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
+                        <!--体温-->
+                        <!-- Column -->
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-lg-4 col-xlg-3 col-md-4 col-sm-12 border-right">
+                                    <div class="card-body">
+                                        <div class="d-flex no-block align-items-center">
+                                            <div>
+                                                <h1>体温</h1>
+                                                <h6 class="card-subtitle"></h6>
+                                            </div>
+                                            <div class="ml-auto">
+                                                <select class="custom-select float-right">
+                                                    <option selected="">4月5日</option>
+                                                    <option value="1">4月4日</option>
+                                                    <option value="2">4月3日</option>
+                                                    <option value="3">4月2日</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 mt-5">
+                                                <h1 class="mb-0 font-light">37.5</h1>
+                                                <h6 class="text-muted">最高温度</h6>
+                                            </div>
+                                            <div class="col-lg-12 mt-5">
+                                                <h1 class="mb-0 font-light">36</h1>
+                                                <h6 class="text-muted">最低温度</h6>
+                                            </div>
+                                            <div class="col-lg-12 mt-5">
+                                                <h1 class="mb-0 font-light">36.86</h1>
+                                                <h6 class="text-muted">平均温度</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-xlg-9 col-md-8 col-sm-12 align-self-center">
+                                    <div class="card-body">
+                                        <div id="temp" style="width:100%; height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
+                    </div>
+                </div>
+                <!-- Row -->
+                <!-- ============================================================== -->
+                <!-- End Page Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- End Container fluid  -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- footer -->
+                <!-- ============================================================== -->
+                <footer class="footer">
+                    © 2020 Blosstech Admin
+                </footer>
+                <!-- ============================================================== -->
+                <!-- End footer -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Page wrapper  -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Wrapper -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- All Jquery -->
+        <!-- ============================================================== -->
+        <script data-cfasync="false"
+            src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script src="../assets/plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap tether Core JavaScript -->
+        <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+        <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <!-- slimscrollbar scrollbar JavaScript -->
+        <script src="js/jquery.slimscroll.js"></script>
+        <!--Wave Effects -->
+        <script src="js/waves.js"></script>
+        <!--Menu sidebar -->
+        <script src="js/sidebarmenu.js"></script>
+        <!--stickey kit -->
+        <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+        <!--Custom JavaScript -->
+        <script src="js/custom.min.js"></script>
+        <!-- ============================================================== -->
+        <!-- This page plugins -->
+        <!-- ============================================================== -->
+        <!-- Chart JS -->
+        <script src="../assets/plugins/echarts/echarts-all.js"></script>
+        <script src="../assets/plugins/echarts/echarts-init.js"></script>
+        <!-- ============================================================== -->
+        <!-- Style switcher -->
+        <!-- ============================================================== -->
+        <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
+
+
+</html>

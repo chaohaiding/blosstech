@@ -58,10 +58,11 @@
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text --><span>
-                         <!-- dark Logo text -->
-                         <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                         <!-- Light Logo text -->    
-                         <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span> </a>
+                            <!-- dark Logo text -->
+                            <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo text -->
+                            <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
+                    </a>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
@@ -78,7 +79,9 @@
                     <!-- ============================================================== -->
                     <ul class="navbar-nav my-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/users/5.jpg" alt="user" class="profile-pic" /></a>
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="../assets/images/users/5.jpg" alt="user" class="profile-pic" /></a>
                             <div class="dropdown-menu dropdown-menu-right animated flipInY">
                                 <ul class="dropdown-user">
                                     <li>
@@ -86,7 +89,7 @@
                                             <div class="u-img"><img src="../assets/images/users/5.jpg" alt="user"></div>
                                             <div class="u-text">
                                                 <h4>王小明医生</h4>
-                                                
+
                                                 <p class="text-muted">心脑血管外科主任</p>
                                             </div>
                                         </div>
@@ -111,22 +114,23 @@
             <!-- ============================================================== -->
             <div class="container-fluid">
                 <!-- ============================================================== -->
-                <!-- Bread crumb and right sidebar toggle -->
-                <!-- ============================================================== -->
                 <div class="row page-titles">
-                    <div class="col-md-6 col-8 align-self-center">
-                        <h3 class="text-themecolor mb-0 mt-0">我的病人</h3>
-                        
-                    </div>
+                    <!-- Nav tabs -->
+                    <ul class="nav customtab col-md-6 col-8 align-self-center" role="tablist">
+                        <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#mypatient" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">我的病人</span></a> </li>
+                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#deptpatient" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">科室的病人</span></a> </li>
+                    </ul>
+
                     <div class="col-md-6 col-4 align-self-center">
                         <div class="dropdown float-right mr-2 hidden-sm-down">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 2020年1月 </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">2020年2月</a> <a class="dropdown-item" href="#">2020年3月</a> <a class="dropdown-item" href="#">2020年4月</a> </div>
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 2020年1月 </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item"
+                                    href="#">2020年2月</a> <a class="dropdown-item" href="#">2020年3月</a> <a
+                                    class="dropdown-item" href="#">2020年4月</a> </div>
                         </div>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                <!-- End Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
@@ -135,544 +139,561 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="table-responsive m-t-40">
-                                    <table id="myTable" class="table table-bordered table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>身份证号</th>
-                                                <th>姓名</th>
-                                                <th>性别</th>
-                                                <th>床号</th>
-                                                <th>监测设备</th>
-                                                <th> </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="notify round align-self-center round-danger"><i class="mdi mdi-heart"><span class="heartbit"></span></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="patient-profile-doctor.html"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="notify round align-self-center round-success"><i class="mdi mdi-watch"><span class="heartbit"></span></i></div>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-success"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-success"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>110123196601141749</td>
-                                                <td>韩梅梅</td>
-                                                <td>女</td>
-                                                <td>61</td>
-                                                <td>
-                                                    <div class="round align-self-center round-success"><i class="mdi mdi-watch"></i></div>
-                                                    <div class="round align-self-center round-danger"><i class="mdi mdi-heart"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="ti-pulse"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-weight"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-sliders-h"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-syringe"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-procedures"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-pills"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-x-ray"></i></div>
-                                                    <div class="round align-self-center round-info"><i class="fas fa-vial"></i></div>
-                                                </td>
-                                                <td><a href="#"><button type="button" class="btn waves-effect waves-light btn-primary">详情</button></a></td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="mypatient" role="tabpanel">
+                                            <div class="p-3">
+                                                <table id="demo-foo-pagination"
+                                                    class="table table-bordered table-striped toggle-arrow-tiny " data-sorting="true">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>住院号</th>
+                                                            <th>入院时间</th>
+                                                            <th>姓名</th>
+                                                            <th>护理级别</th>
+                                                            <th>性别</th>
+                                                            <th>年龄</th>
+                                                            <th>床号</th>
+                                                            <th>体征信息</th>
+                                                            <th>设备电量</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>12345678</td>
+                                                            <td>2020年1月27日</td>
+                                                            <td>韩梅梅</td>
+                                                            <td><span class="label label-table label-danger">第 1 级别</span></td>
+                                                            <td>女</td>
+                                                            <td>56</td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="patient-profile-doctor-all.html">
+                                                                    <div class="round align-self-center round-success">血压</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor-all.html#m-ecg">
+                                                                    <div class="notify round align-self-center round-danger">
+                                                                        ECG<span class="heartbit"></span></div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor-all.html#m-sp">
+                                                                    <div class="round align-self-center round-warning">血氧</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor-all.html#m-temp">
+                                                                    <div class="round align-self-center round-info">体温</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor-all.html"><button type="button"
+                                                                        class="btn btn-right waves-effect waves-light btn-primary">显示全部</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="notify round"><img src="../assets/icons/1.jpg" width="48"
+                                                                        class="img-circle" alt="img"><span class="heartbit"></span>
+                                                                </div>
+                                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/4.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12345678</td>
+                                                            <td>2020年1月27日</td>
+                                                            <td>韩梅梅</td>
+                                                            <td><span class="label label-table label-inverse">第 2 级别</span></td>
+                                                            <td>女</td>
+                                                            <td>56</td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血压</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">ECG</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-warning">血氧</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-info">体温</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor-all.html"><button type="button"
+                                                                        class="btn btn-right waves-effect waves-light btn-primary">显示全部</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="round"><img src="../assets/icons/1.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/4.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12345678</td>
+                                                            <td>2020年1月27日</td>
+                                                            <td>韩梅梅</td>
+                                                            <td><span class="label label-table label-success">第 3 级别</span></td>
+                                                            <td>女</td>
+                                                            <td>56</td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血压</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">ECG</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-warning">血氧</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">体温</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html"><button type="button"
+                                                                        class="btn btn-right waves-effect waves-light btn-primary">显示全部</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="round"><img src="../assets/icons/1.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/4.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12345678</td>
+                                                            <td>2020年1月27日</td>
+                                                            <td>韩梅梅</td>
+                                                            <td><span class="label label-table label-success">第 3 级别</span></td>
+                                                            <td>女</td>
+                                                            <td>56</td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血压</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">ECG</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血氧</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">体温</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html"><button type="button"
+                                                                        class="btn btn-right waves-effect waves-light btn-primary">显示全部</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="round"><img src="../assets/icons/1.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="notify round"><img src="../assets/icons/4.jpg" width="48"
+                                                                        class="img-circle" alt="img"><span class="heartbit"></span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12345678</td>
+                                                            <td>2020年1月27日</td>
+                                                            <td>韩梅梅</td>
+                                                            <td><span class="label label-table label-success">第 3 级别</span></td>
+                                                            <td>女</td>
+                                                            <td>56</td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血压</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-warning">ECG</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="notify round align-self-center round-danger">血氧<span
+                                                                            class="heartbit"></span></div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-info">体温</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html"><button type="button"
+                                                                        class="btn btn-right waves-effect waves-light btn-primary">显示全部</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="round"><img src="../assets/icons/1.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/4.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12345678</td>
+                                                            <td>2020年1月27日</td>
+                                                            <td>韩梅梅</td>
+                                                            <td><span class="label label-table label-success">第 3 级别</span></td>
+                                                            <td>女</td>
+                                                            <td>56</td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血压</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">ECG</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-warning">血氧</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-info">体温</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html"><button type="button"
+                                                                        class="btn btn-right waves-effect waves-light btn-primary">显示全部</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="round"><img src="../assets/icons/1.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/4.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12345678</td>
+                                                            <td>2020年1月27日</td>
+                                                            <td>韩梅梅</td>
+                                                            <td><span class="label label-table label-success">第 3 级别</span></td>
+                                                            <td>女</td>
+                                                            <td>56</td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血压</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">ECG</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-warning">血氧</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-info">体温</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html"><button type="button"
+                                                                        class="btn btn-right waves-effect waves-light btn-primary">显示全部</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="round"><img src="../assets/icons/1.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/4.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                            </td>
+                                                        </tr>
+                
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="deptpatient" role="tabpanel">
+                                            <div class="p-3">
+                                                <table id="demo-foo-pagination"
+                                                    class="table table-bordered table-striped toggle-arrow-tiny" data-sorting="true">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>住院号</th>
+                                                            <th>入院时间</th>
+                                                            <th>姓名</th>
+                                                            <th>护理级别</th>
+                                                            <th>性别</th>
+                                                            <th>年龄</th>
+                                                            <th>床号</th>
+                                                            <th>体征信息</th>
+                                                            <th>设备电量</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>12345678</td>
+                                                            <td>2020年1月27日</td>
+                                                            <td>韩梅梅</td>
+                                                            <td><span class="label label-table label-danger">第 1 级别</span></td>
+                                                            <td>女</td>
+                                                            <td>56</td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血压</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="notify round align-self-center round-danger">
+                                                                        ECG<span class="heartbit"></span></div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-warning">血氧</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-info">体温</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html"><button type="button"
+                                                                        class="btn btn-right waves-effect waves-light btn-primary">显示全部</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="notify round"><img src="../assets/icons/1.jpg" width="48"
+                                                                        class="img-circle" alt="img"><span class="heartbit"></span>
+                                                                </div>
+                                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/4.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12345678</td>
+                                                            <td>2020年1月27日</td>
+                                                            <td>韩梅梅</td>
+                                                            <td><span class="label label-table label-inverse">第 2 级别</span></td>
+                                                            <td>女</td>
+                                                            <td>56</td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血压</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">ECG</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-warning">血氧</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-info">体温</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html"><button type="button"
+                                                                        class="btn btn-right waves-effect waves-light btn-primary">显示全部</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="round"><img src="../assets/icons/1.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/4.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12345678</td>
+                                                            <td>2020年1月27日</td>
+                                                            <td>韩梅梅</td>
+                                                            <td><span class="label label-table label-success">第 3 级别</span></td>
+                                                            <td>女</td>
+                                                            <td>56</td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血压</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">ECG</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-warning">血氧</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">体温</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html"><button type="button"
+                                                                        class="btn btn-right waves-effect waves-light btn-primary">显示全部</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="round"><img src="../assets/icons/1.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/4.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12345678</td>
+                                                            <td>2020年1月27日</td>
+                                                            <td>韩梅梅</td>
+                                                            <td><span class="label label-table label-success">第 3 级别</span></td>
+                                                            <td>女</td>
+                                                            <td>56</td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血压</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">ECG</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血氧</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">体温</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html"><button type="button"
+                                                                        class="btn btn-right waves-effect waves-light btn-primary">显示全部</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="round"><img src="../assets/icons/1.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="notify round"><img src="../assets/icons/4.jpg" width="48"
+                                                                        class="img-circle" alt="img"><span class="heartbit"></span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12345678</td>
+                                                            <td>2020年1月27日</td>
+                                                            <td>韩梅梅</td>
+                                                            <td><span class="label label-table label-success">第 3 级别</span></td>
+                                                            <td>女</td>
+                                                            <td>56</td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血压</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-warning">ECG</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="notify round align-self-center round-danger">血氧<span
+                                                                            class="heartbit"></span></div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-info">体温</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html"><button type="button"
+                                                                        class="btn btn-right waves-effect waves-light btn-primary">显示全部</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="round"><img src="../assets/icons/1.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/4.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12345678</td>
+                                                            <td>2020年1月27日</td>
+                                                            <td>韩梅梅</td>
+                                                            <td><span class="label label-table label-success">第 3 级别</span></td>
+                                                            <td>女</td>
+                                                            <td>56</td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血压</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">ECG</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-warning">血氧</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-info">体温</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html"><button type="button"
+                                                                        class="btn btn-right waves-effect waves-light btn-primary">显示全部</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="round"><img src="../assets/icons/1.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/4.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12345678</td>
+                                                            <td>2020年1月27日</td>
+                                                            <td>韩梅梅</td>
+                                                            <td><span class="label label-table label-success">第 3 级别</span></td>
+                                                            <td>女</td>
+                                                            <td>56</td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">血压</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-success">ECG</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-warning">血氧</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html">
+                                                                    <div class="round align-self-center round-info">体温</div>
+                                                                </a>
+                                                                <a href="patient-profile-doctor.html"><button type="button"
+                                                                        class="btn btn-right waves-effect waves-light btn-primary">显示全部</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="round"><img src="../assets/icons/1.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                                <div class="round"><img src="../assets/icons/4.jpg" width="48"
+                                                                        class="img-circle" alt="img"></div>
+                                                            </td>
+                                                        </tr>
+                
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->
-            
+
             </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
@@ -693,7 +714,7 @@
     <!-- End Wrapper -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
-    <!-- All Jquery -->
+<!-- All Jquery -->
     <!-- ============================================================== -->
     <script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../assets/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
@@ -701,73 +722,17 @@
     <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
     <script src="js/jquery.slimscroll.js"></script>
-    <!--Wave Effects -->
-    <script src="js/waves.js"></script>
+
     <!--Menu sidebar -->
     <script src="js/sidebarmenu.js"></script>
     <!--stickey kit -->
     <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
-    <!-- This is data table -->
-    <script src="../assets/plugins/datatables/datatables.min.js"></script>
-    <!-- start - This is for export functionality only -->
-    <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
-    <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
-    <script src="../../../../../cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
-    <script src="../../../../../cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
-    <script src="../../../../../cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
-    <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
-    <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
-    <!-- end - This is for export functionality only -->
-    <script>
-    $(function() {
-        $('#myTable').DataTable();
-        $(document).ready(function() {
-            var table = $('#example').DataTable({
-                "columnDefs": [{
-                    "visible": false,
-                    "targets": 2
-                }],
-                "order": [
-                    [2, 'asc']
-                ],
-                "displayLength": 25,
-                "drawCallback": function(settings) {
-                    var api = this.api();
-                    var rows = api.rows({
-                        page: 'current'
-                    }).nodes();
-                    var last = null;
-                    api.column(2, {
-                        page: 'current'
-                    }).data().each(function(group, i) {
-                        if (last !== group) {
-                            $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
-                            last = group;
-                        }
-                    });
-                }
-            });
-            // Order by the grouping
-            $('#example tbody').on('click', 'tr.group', function() {
-                var currentOrder = table.order()[0];
-                if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
-                    table.order([2, 'desc']).draw();
-                } else {
-                    table.order([2, 'asc']).draw();
-                }
-            });
-        });
-    });
-    $('#example23').DataTable({
-        dom: 'Bfrtip',
-        buttons: [
-            'copy', 'csv', 'excel', 'pdf', 'print'
-        ]
-    });
-    $('.buttons-copy, .buttons-csv, .buttons-print, .buttons-pdf, .buttons-excel').addClass('btn btn-primary mr-1');
-    </script>
+    <script src="../assets/plugins/moment/moment.js" type="text/javascript"></script>
+    <script src="../assets/plugins/footable/js/footable.min.js"></script>
+    <!--FooTable init-->
+    <script src="js/footable-init.js"></script>
     <!-- ============================================================== -->
     <!-- Style switcher -->
     <!-- ============================================================== -->
