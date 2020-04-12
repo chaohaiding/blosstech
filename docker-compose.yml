@@ -1,0 +1,16 @@
+version: "3"
+services:
+  webapp:
+    container_name: blosstech
+    image: blosstech
+    restart: always
+    ports:
+      - "5000:5000"
+    depends_on:
+      - webdis
+  webdis:
+    container_name: webdis
+    image: nicolas/webdis:0.1.9
+    restart: always
+    ports:
+      - "7379:7379"
