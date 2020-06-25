@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 
 
 <head>
@@ -11,9 +11,16 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Patient Profile Doctor See All</title>
+    <title>Blosstech Admin - patient profile nurse</title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- chartist CSS -->
+    <link href="../assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/plugins/chartist-js/dist/chartist-init.css" rel="stylesheet">
+    <link href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="../assets/plugins/css-chart/css-chart.css" rel="stylesheet">
+    <!--This page css - Morris CSS -->
+    <link href="../assets/plugins/morrisjs/morris.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
@@ -21,9 +28,9 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body class="fix-header single-column card-no-border mini-sidebar">
@@ -47,7 +54,7 @@
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="#">
                         <!-- Logo icon -->
                         <b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
@@ -82,21 +89,21 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-                                    src="../assets/images/users/5.jpg" alt="user" class="profile-pic" /></a>
+                                    src="../assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
                             <div class="dropdown-menu dropdown-menu-right animated flipInY">
                                 <ul class="dropdown-user">
                                     <li>
                                         <div class="dw-user-box">
-                                            <div class="u-img"><img src="../assets/images/users/5.jpg" alt="user"></div>
+                                            <div class="u-img"><img src="../assets/images/users/1.jpg" alt="user"></div>
                                             <div class="u-text">
-                                                <h4>王小明医生</h4>
+                                                <h4>李小红护士</h4>
 
-                                                <p class="text-muted">心脑血管外科医生</p>
+                                                <p class="text-muted">心脑血管外科护士长</p>
                                             </div>
                                         </div>
                                     </li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="login-doctor.html"><i class="fa fa-power-off"></i> 登出</a></li>
+                                    <li><a href="login-nurse.html"><i class="fa fa-power-off"></i> 登出</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -122,8 +129,9 @@
                         <h3 class="text-themecolor mb-0 mt-0">病人界面</h3>
                     </div>
                     <div class="col-md-6 col-4 align-self-center">
-                        <a href="doctor-patient.html"><button class="btn float-right hidden-sm-down btn-info">
-                                返回主页面</button>
+                        <a href="nurse-patient.html">
+                            <button class="btn float-right hidden-sm-down btn-info">返回主页面</button>
+                        </a>
                     </div>
                 </div>
                 <!-- ============================================================== -->
@@ -133,123 +141,210 @@
                 <!-- ============================================================== -->
                 <!-- Row -->
                 <div class="row">
-                    <!-- Column -->
+                    <!-- Patient info Column -->
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body button-group">
+                                <table class="table no-border">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h3>韩梅梅</h3>
+                                            </td>
+                                            <td>
+                                                <div class="notify round"><img src="../assets/icons/1.jpg" width="48"
+                                                        class="img-circle" alt="img"><span class="heartbit"></span>
+                                                </div>
+                                                <div class="round"><img src="../assets/icons/2.jpg" width="48"
+                                                        class="img-circle" alt="img"></div>
+                                                <div class="round"><img src="../assets/icons/3.jpg" width="48"
+                                                        class="img-circle" alt="img"></div>
+                                                <div class="round"><img src="../assets/icons/4.jpg" width="48"
+                                                        class="img-circle" alt="img"></div>
+                                                <button type="button"
+                                                    class="btn btn-right waves-light btn-warning">全部停止闪烁</button>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown mr-2 hidden-sm-down">
+                                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                        id="dropdownMenuButton" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false"> 改变护理级别：1 </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a
+                                                            class="dropdown-item" href="#">改变护理级别：2</a> <a
+                                                            class="dropdown-item" href="#">改变护理级别：3</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body button-group">
+                                <table class="table no-border">
+                                    <tbody class="float-right">
+                                        <tr>
+                                            <td>
+                                                <div class="dropdown mr-2 hidden-sm-down">
+                                                    <button class="btn btn-info dropdown-toggle" type="button"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false"> 查看其他病床：12床 </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#">查看其他病床：11床</a>
+                                                        <a class="dropdown-item" href="#">查看其他病床：10床</a>
+                                                        <a class="dropdown-item" href="#">查看其他病床：09床</a>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BP warning timeline -->
                     <div class="col-md-12 col-lg-4 col-xlg-3">
                         <div class="card">
                             <div class="card-body">
-                                <center class="mt-4"> <img src="../assets/images/users/4.jpg" class="img-circle"
-                                        width="100" />
-                                    <h4 class="card-title mt-2">韩梅梅</h4>
-                                    <h6 class="card-subtitle">性别：女</h6>
-                                    <h6 class="card-subtitle">年龄：48</h6>
-                                    <h6 class="card-title mt-2">住院号：12345678</h6>
-                                    <h6 class="card-subtitle">入院时间：2020年3月2日</h6>
-
-                                    <div class="col-8">
-                                        <div class="dropdown float-right mr-2 hidden-sm-down">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false"> 护理级别：1 </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">护理级别：2</a> <a
-                                                    class="dropdown-item" href="#">护理级别：3</a>
-                                            </div>
-                                        </div>
-                                        <div class="row text-center justify-content-md-center">
-                                            <div class="dropdown float-right mr-2 hidden-sm-down">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 61号病床 </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">62号病床</a>
-                                                    <a class="dropdown-item" href="#">63号病床</a> <a class="dropdown-item" href="#">64号病床</a>
+                                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0"
+                                    class="position-relative mt-4" style="height: 375px; overflow: auto;">
+                                    <h4>血压预警记录</h4>
+                                    <ul class="timeline">
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            14:56:44</small> </p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control text-muted"
+                                                            rows="3">如无特别说明，直接保存</textarea>
+                                                        <button type="submit" class="btn btn-success"> <i
+                                                                class="fa fa-check"></i>
+                                                            保存</button>
+                                                        <button type="button" class="btn btn-dark">取消</button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <hr>
-                                    </div>
-                                    <div>
-                                        <br/>
-                                    </div>
-                                    <td>
-                                        <div class="notify round"><img src="../assets/icons/1.jpg"
-                                                width="48" class="img-circle" alt="img"><span
-                                                class="heartbit"></span></div>
-                                        <div class="round"><img src="../assets/icons/2.jpg" width="48"
-                                                class="img-circle" alt="img"></div>
-                                        <div class="round"><img src="../assets/icons/3.jpg" width="48"
-                                                class="img-circle" alt="img"></div>
-                                        <div class="round"><img src="../assets/icons/4.jpg" width="48"
-                                                class="img-circle" alt="img"></div>
-                                    </td>
-                                </center>
-                            </div>
-                            <div>
-                                <hr>
-                            </div>
-                            <div class="card-body">
-                                <medium class="text-muted">医生的记录 </medium>
-                                <p> </p>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="5"></textarea>
-                                </div>
-                                <div class="form-actions">
-                                    <div class="card-body">
-                                        <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i>
-                                            保存</button>
-                                        <button type="button" class="btn btn-dark">取消</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <hr>
-                            </div>
-                            <div class="card-body">
-                                <medium class="text-muted">护士的记录 </medium>
-                                <p> </p>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="5"
-                                        placeholder="症状有：心悸、气短、端坐呼吸、夜间阵发性呼吸困难、胸骨后的压迫性或紧缩性疼痛、胸闷不适、水肿、发绀、晕厥、咳嗽咯血、虚弱、嗳气、上腹痛、恶心、呕吐；左后背痛、左手臂痛等"
-                                        readonly=""></textarea>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            11:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>值班护士记录，病人感觉不适。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            06:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>信息记录，信息记录。。。。。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            03:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>病患信息记录，病患信息记录，病患信息记录，病患信息记录。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            22:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Column -->
-                    <!-- Column -->
+                    <!-- BP Data Column -->
                     <div class="col-md-12 col-lg-8 col-xlg-9">
-                        <!--BP-->
-                        <!-- Column -->
                         <div class="card">
                             <div class="row">
                                 <div class="col-lg-4 col-xlg-3 col-md-4 col-sm-12 border-right">
                                     <div class="card-body">
-                                        <div class="d-flex no-block align-items-center">
+                                        <div class="d-flex align-items-center">
                                             <div>
                                                 <h1>血压</h1>
-                                                <h6 class="card-subtitle"></h6>
-                                            </div>
-                                            <div class="ml-auto">
+                                                <button type="button" class="btn btn-block btn-warning">停止血压预警闪烁</button>
+                                                <p></p>
                                                 <select class="custom-select float-right">
-                                                    <option selected="">4月5日</option>
-                                                    <option value="1">4月4日</option>
-                                                    <option value="2">4月3日</option>
-                                                    <option value="3">4月2日</option>
+                                                    <option selected="">查看4月5日上午</option>
+                                                    <option value="1">查看4月4日下午</option>
+                                                    <option value="2">查看4月4日上午</option>
+                                                    <option value="3">查看4月3日下午</option>
+                                                    <option value="3">查看4月3日上午</option>
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-12 mt-5">
-                                                <h1 class="mb-0 font-light">135</h1>
-                                                <h6 class="text-muted">收缩压</h6>
-                                            </div>
-                                            <div class="col-lg-12 mt-5">
-                                                <h1 class="mb-0 font-light">92</h1>
-                                                <h6 class="text-muted">舒张压</h6>
-                                            </div>
-                                            <div class="col-lg-12 mt-5" id="m-ecg">
-                                                <h1 class="mb-0 font-light">113</h1>
-                                                <h6 class="text-muted">平均压</h6>
-                                            </div>
+                                        <hr>
+                                        <div class="ml-auto">
+                                            <span>选择预警数值---舒张压</span>
+                                            <select class="custom-select float-right">
+                                                <option selected="">60mmHg</option>
+                                                <option value="1">70mmHg</option>
+                                                <option value="2">80mmHg</option>
+                                                <option value="3">90mmHg</option>
+                                                <option value="4">100mmHg</option>
+                                                <option value="5">110mmHg</option>
+                                                <option value="6">120mmHg</option>
+                                                <option value="7">130mmHg</option>
+                                                <option value="8">140mmHg</option>
+                                            </select>
                                         </div>
+                                        <div class="ml-auto">
+                                            <span>选择预警数值---收缩压</span>
+                                            <select class="custom-select float-right">
+                                                <option selected="">160mmHg</option>
+                                                <option value="1">170mmHg</option>
+                                                <option value="2">180mmHg</option>
+                                                <option value="3">190mmHg</option>
+                                                <option value="4">200mmHg</option>
+                                                <option value="5">210mmHg</option>
+                                                <option value="6">220mmHg</option>
+                                                <option value="7">230mmHg</option>
+                                                <option value="8">240mmHg</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-success mt-5">开始采集</button>
+                                            <button type="button" class="btn btn-danger mt-5">结束采集</button>
+                                        </div>
+                                            
+                                        
+                                        
+                                        
                                     </div>
                                 </div>
                                 <div class="col-lg-8 col-xlg-9 col-md-8 col-sm-12 align-self-center">
@@ -259,86 +354,283 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Column -->
-                        <!--ECG-->
-                        <!-- Column -->
+                    </div>
+
+                    <!-- ECG warning timeline -->
+                    <div class="col-md-12 col-lg-4 col-xlg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0"
+                                    class="position-relative mt-4" style="height: 375px; overflow: auto;">
+                                    <h4>ECG预警记录</h4>
+                                    <ul class="timeline">
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            14:56:44</small> </p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control text-muted"
+                                                            rows="3">如无特别说明，直接保存</textarea>
+                                                        <button type="submit" class="btn btn-success"> <i
+                                                                class="fa fa-check"></i>
+                                                            保存</button>
+                                                        <button type="button" class="btn btn-dark">取消</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            11:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>值班护士记录，病人感觉不适。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            06:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>信息记录，信息记录。。。。。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            03:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>病患信息记录，病患信息记录，病患信息记录，病患信息记录。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            22:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--ECG Data Column-->
+                    <div class="col-md-12 col-lg-8 col-xlg-9">
                         <div class="card">
                             <div class="row">
                                 <div class="col-lg-4 col-xlg-3 col-md-4 col-sm-12 border-right">
                                     <div class="card-body">
-                                        <div class="d-flex no-block align-items-center">
+                                        <div class="d-flex align-items-center">
                                             <div>
                                                 <h1>ECG</h1>
-                                                <h6 class="card-subtitle"></h6>
-                                            </div>
-                                            <div class="ml-auto">
+                                                <button type="button" class="btn btn-block btn-warning">停止ECG预警闪烁</button>
+                                                <p></p>
                                                 <select class="custom-select float-right">
-                                                    <option selected="">4月5日</option>
-                                                    <option value="1">4月4日</option>
-                                                    <option value="2">4月3日</option>
-                                                    <option value="3">4月2日</option>
+                                                    <option selected="">查看4月5日上午</option>
+                                                    <option value="1">查看4月4日下午</option>
+                                                    <option value="2">查看4月4日上午</option>
+                                                    <option value="3">查看4月3日下午</option>
+                                                    <option value="3">查看4月3日上午</option>
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-12 mt-5">
-                                                <h1 class="mb-0 font-light">87</h1>
-                                                <h6 class="text-muted">最高心率</h6>
-                                            </div>
-                                            <div class="col-lg-12 mt-5">
-                                                <h1 class="mb-0 font-light">79</h1>
-                                                <h6 class="text-muted">最低心率</h6>
-                                            </div>
-                                            <div class="col-lg-12 mt-5" id="m-sp">
-                                                <h1 class="mb-0 font-light">83</h1>
-                                                <h6 class="text-muted">平均心率</h6>
-                                            </div>
+                                        <hr>
+                                        <div class="ml-auto">
+                                            <span>选择P波预警数值</span>
+                                            <select class="custom-select float-right">
+                                                <option value="1">40</option>
+                                                <option value="2">50</option>
+                                                <option value="3">60</option>
+                                                <option value="4">70</option>
+                                                <option selected="">80</option>
+                                                <option value="6">90</option>
+                                                <option value="7">100</option>
+                                                <option value="8">110</option>
+                                                <option value="9">120</option>
+                                                <option value="10">130</option>
+                                                <option value="11">140</option>
+                                                <option value="12">150</option>
+                                                <option value="13">160</option>
+                                                <option value="14">170</option>
+                                                <option value="15">180</option>
+                                                <option value="16">190</option>
+                                                <option value="17">200</option>
+                                            </select>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <span>选择R波预警数值</span>
+                                            <select class="custom-select float-right">
+                                                <option value="1">40</option>
+                                                <option value="2">50</option>
+                                                <option value="3">60</option>
+                                                <option value="4">70</option>
+                                                <option selected="">80</option>
+                                                <option value="6">90</option>
+                                                <option value="7">100</option>
+                                                <option value="8">110</option>
+                                                <option value="9">120</option>
+                                                <option value="10">130</option>
+                                                <option value="11">140</option>
+                                                <option value="12">150</option>
+                                                <option value="13">160</option>
+                                                <option value="14">170</option>
+                                                <option value="15">180</option>
+                                                <option value="16">190</option>
+                                                <option value="17">200</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-success mt-5">开始采集</button>
+                                            <button type="button" class="btn btn-danger mt-5">结束采集</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-8 col-xlg-9 col-md-8 col-sm-12 align-self-center">
                                     <div class="card-body">
-                                        <div class="demo-container" style="height:400px;">
-                                            <div id="placeholder" class="flot-chart-content"></div>
-                                        </div>
+                                        <div id="ecg" style="width:100%; height:400px;"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Column -->
-                        <!--SPO2-->
-                        <!-- Column -->
+                    </div>
+
+                    <!--SPO2 warning timeline-->
+                    <div class="col-md-12 col-lg-4 col-xlg-3">
                         <div class="card">
+                            <div class="card-body">
+                                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0"
+                                    class="position-relative mt-4" style="height: 375px; overflow: auto;">
+                                    <h4>血氧预警记录</h4>
+                                    <ul class="timeline">
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            14:56:44</small> </p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control text-muted"
+                                                            rows="3">如无特别说明，直接保存</textarea>
+                                                        <button type="submit" class="btn btn-success"> <i
+                                                                class="fa fa-check"></i>
+                                                            保存</button>
+                                                        <button type="button" class="btn btn-dark">取消</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            11:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>值班护士记录，病人感觉不适。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            06:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>信息记录，信息记录。。。。。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            03:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>病患信息记录，病患信息记录，病患信息记录，病患信息记录。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            22:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SPO2 Data Column -->
+                    <div class="col-md-12 col-lg-8 col-xlg-9">
+                        <div class="card invalid">
                             <div class="row">
                                 <div class="col-lg-4 col-xlg-3 col-md-4 col-sm-12 border-right">
                                     <div class="card-body">
-                                        <div class="d-flex no-block align-items-center">
+                                        <div class="d-flex align-items-center">
                                             <div>
                                                 <h1>血氧</h1>
-                                                <h6 class="card-subtitle"></h6>
-                                            </div>
-                                            <div class="ml-auto">
+                                                <button type="button" class="btn btn-block btn-warning">停止血氧预警闪烁</button>
+                                                <p></p>
                                                 <select class="custom-select float-right">
-                                                    <option selected="">4月5日</option>
-                                                    <option value="1">4月4日</option>
-                                                    <option value="2">4月3日</option>
-                                                    <option value="3">4月2日</option>
+                                                    <option selected="">查看4月5日上午</option>
+                                                    <option value="1">查看4月4日下午</option>
+                                                    <option value="2">查看4月4日上午</option>
+                                                    <option value="3">查看4月3日下午</option>
+                                                    <option value="3">查看4月3日上午</option>
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-12 mt-5">
-                                                <h1 class="mb-0 font-light">97</h1>
-                                                <h6 class="text-muted">最高血氧值</h6>
-                                            </div>
-                                            <div class="col-lg-12 mt-5">
-                                                <h1 class="mb-0 font-light">86</h1>
-                                                <h6 class="text-muted">最低血氧值</h6>
-                                            </div>
-                                            <div class="col-lg-12 mt-5" id="m-temp">
-                                                <h1 class="mb-0 font-light">91</h1>
-                                                <h6 class="text-muted">平均血氧值</h6>
-                                            </div>
+                                        <hr>
+                                        <div class="ml-auto">
+                                            <span>选择预警数值</span>
+                                            <select class="custom-select float-right">
+                                                <option selected="">40%</option>
+                                                <option value="1">50%</option>
+                                                <option value="2">60%</option>
+                                                <option value="3">70%</option>
+                                                <option value="4">80%</option>
+                                                <option value="5">90%</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-success mt-5">开始采集</button>
+                                            <button type="button" class="btn btn-danger mt-5">结束采集</button>
                                         </div>
                                     </div>
                                 </div>
@@ -349,41 +641,134 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Column -->
-                        <!--体温-->
-                        <!-- Column -->
+                    </div>
+
+                    <!--Temp warning timeline-->
+                    <div class="col-md-12 col-lg-4 col-xlg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0"
+                                    class="position-relative mt-4" style="height: 375px; overflow: auto;">
+                                    <h4>体温预警记录</h4>
+                                    <ul class="timeline">
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            14:56:44</small> </p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control text-muted"
+                                                            rows="3">如无特别说明，直接保存</textarea>
+                                                        <button type="submit" class="btn btn-success"> <i
+                                                                class="fa fa-check"></i>
+                                                            保存</button>
+                                                        <button type="button" class="btn btn-dark">取消</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            11:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>值班护士记录，病人感觉不适。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            06:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>信息记录，信息记录。。。。。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            03:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>病患信息记录，病患信息记录，病患信息记录，病患信息记录。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge danger"></div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <p><small class="text-muted"><i class="far fa-clock"></i>
+                                                            22:56:44</small> </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录，病患信息记录。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Temp Data Column -->
+                    <div class="col-md-12 col-lg-8 col-xlg-9">
                         <div class="card">
                             <div class="row">
                                 <div class="col-lg-4 col-xlg-3 col-md-4 col-sm-12 border-right">
                                     <div class="card-body">
-                                        <div class="d-flex no-block align-items-center">
+                                        <div class="d-flex align-items-center">
                                             <div>
                                                 <h1>体温</h1>
-                                                <h6 class="card-subtitle"></h6>
-                                            </div>
-                                            <div class="ml-auto">
+                                                <button type="button" class="btn btn-block btn-warning">停止体温预警闪烁</button>
+                                                <p></p>
                                                 <select class="custom-select float-right">
-                                                    <option selected="">4月5日</option>
-                                                    <option value="1">4月4日</option>
-                                                    <option value="2">4月3日</option>
-                                                    <option value="3">4月2日</option>
+                                                    <option selected="">查看4月5日上午</option>
+                                                    <option value="1">查看4月4日下午</option>
+                                                    <option value="2">查看4月4日上午</option>
+                                                    <option value="3">查看4月3日下午</option>
+                                                    <option value="3">查看4月3日上午</option>
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-12 mt-5">
-                                                <h1 class="mb-0 font-light">37.5</h1>
-                                                <h6 class="text-muted">最高温度</h6>
-                                            </div>
-                                            <div class="col-lg-12 mt-5">
-                                                <h1 class="mb-0 font-light">36</h1>
-                                                <h6 class="text-muted">最低温度</h6>
-                                            </div>
-                                            <div class="col-lg-12 mt-5">
-                                                <h1 class="mb-0 font-light">36.86</h1>
-                                                <h6 class="text-muted">平均温度</h6>
-                                            </div>
+                                        <hr>
+                                        <div class="ml-auto">
+                                            <span>选择预警数值</span>
+                                            <select class="custom-select float-right">
+                                                <option selected="">35°c</option>
+                                                <option value="1">35.5°c</option>
+                                                <option value="2">36°c</option>
+                                                <option value="3">36.5°c</option>
+                                                <option value="4">37°c</option>
+                                                <option value="5">37.5°c</option>
+                                                <option value="6">38°c</option>
+                                                <option value="7">38.5°c</option>
+                                                <option value="8">39°c</option>
+                                                <option value="9">39.5°c</option>
+                                                <option value="10">40°c</option>
+                                                <option value="11">40.5°c</option>
+                                                <option value="12">41°c</option>
+                                                <option value="13">41.5°c</option>
+                                                <option value="14">42°c</option>
+                                            </select>
                                         </div>
+                                        <div>
+                                            <button type="button" class="btn btn-success mt-5">开始采集</button>
+                                            <button type="button" class="btn btn-danger mt-5">结束采集</button>
+                                        </div>
+                                       
                                     </div>
                                 </div>
                                 <div class="col-lg-8 col-xlg-9 col-md-8 col-sm-12 align-self-center">
@@ -445,10 +830,6 @@
         <!-- Chart JS -->
         <script src="../assets/plugins/echarts/echarts-all.js"></script>
         <script src="../assets/plugins/echarts/echarts-init.js"></script>
-        <!-- ============================================================== -->
-        <!-- Flot Charts JavaScript -->
-        <script src="../assets/plugins/flot/jquery.flot.js"></script>
-        <script src="js/flot-data.js"></script>
         <!-- ============================================================== -->
         <!-- Style switcher -->
         <!-- ============================================================== -->
