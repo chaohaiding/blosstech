@@ -645,6 +645,36 @@ html body .jqstooltip {
   overflow-x: auto;
   -ms-overflow-style: -ms-autohiding-scrollbar; }
 
+  /*tabel line flashing*/
+  @-webkit-keyframes invalid {
+    from { background-color: red; }
+    to { background-color: inherit; }
+  }
+  @-moz-keyframes invalid {
+    from { background-color: red; }
+    to { background-color: inherit; }
+  }
+  @-o-keyframes invalid {
+    from { background-color: red; }
+    to { background-color: inherit; }
+  }
+  @keyframes invalid {
+    from { background-color: red; }
+    to { background-color: inherit; }
+  }
+  .invalid {
+    -webkit-animation: invalid 1s infinite; /* Safari 4+ */
+    -moz-animation:    invalid 1s infinite; /* Fx 5+ */
+    -o-animation:      invalid 1s infinite; /* Opera 12+ */
+    animation:         invalid 1s infinite; /* IE 10+ */
+  }
+  
+  td {
+      padding: 1em;
+  }
+
+
+
 /*******************
 Wave Effects
 *******************/
@@ -3930,7 +3960,7 @@ Timeline page
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%;
+  left: 1%;
   width: 3px;
   margin-left: -1.5px;
   background-color: #f2f7f8; }
@@ -3958,7 +3988,7 @@ Timeline page
 .timeline > li > .timeline-panel {
   float: left;
   position: relative;
-  width: 46%;
+  width: 93%;
   padding: 20px;
   border: 1px solid rgba(120, 130, 140, 0.13);
   border-radius: 4px;
@@ -3990,10 +4020,10 @@ Timeline page
 .timeline > li > .timeline-badge {
   z-index: 10;
   position: absolute;
-  top: 16px;
-  left: 50%;
-  width: 50px;
-  height: 50px;
+  top: 25px;
+  left: 5%;
+  width: 20px;
+  height: 20px;
   margin-left: -25px;
   border-radius: 50% 50% 50% 50%;
   text-align: center;
