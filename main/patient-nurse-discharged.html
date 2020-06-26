@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>blosstech Admin - patient profile nurse addnew</title>
+    <title>blosstech Admin - patient nurse discharged</title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/plugins/icheck/skins/all.css" rel="stylesheet">
@@ -122,11 +122,7 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-6 col-8 align-self-center">
-                        <h3 class="text-themecolor mb-0 mt-0">添加新的病人</h3>
-                    </div>
-                    <div class="col-md-6 col-4 align-self-center">
-                        <a href="patient-profile-nurse-addnew.html"><button class="btn float-right hidden-sm-down btn-success"><i class="mdi mdi-plus-circle"></i>
-                            添加新的病人</button></a>
+                        <h3 class="text-themecolor mb-0 mt-0">出院退床确认</h3>
                     </div>
                 </div>
                 <!-- ============================================================== -->
@@ -139,148 +135,40 @@
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title mt-2">基本信息</h4>
-                                <hr>
-                                <!--1st line-->
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="control-label">床号</label>
-                                            <select class="form-control custom-select">
-                                                <option value="">01</option>
-                                                <option value="">02</option>
-                                                <option value="">03</option>
-                                                <option value="">04</option>
-                                                <option value="">05</option>
-                                                <option value="">06</option>
-                                                <option value="">07</option>
-                                                <option value="">08</option>
-                                                <option value="">09</option>
-                                                <option value="">10</option>
-                                                <option value="">11</option>
-                                                <option value="">12</option>
-                                                <option value="">13</option>
-                                                <option value="">14</option>
-                                                <option value="">15</option>
-                                                <option value="">16</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="control-label">姓名</label>
-                                            <input type="text" id="FullName" class="form-control form-control-danger"
-                                                placeholder="例如：韩梅梅">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="control-label">性别</label>
-                                            <select class="form-control custom-select">
-                                                <option value="">男</option>
-                                                <option value="">女</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="control-label">生日</label>
-                                            <input type="date" class="form-control">
-                                        </div>
-                                    </div> 
-                                </div>
-                                <!--2nd line-->
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="control-label">住院号</label>
-                                            <input type="text" id="hospitalized no." class="form-control form-control-danger"
-                                                placeholder="例如：12345678">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="control-label">入院时间</label>
-                                            <input type="date" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="control-label">护理级别</label>
-                                            <select class="form-control custom-select">
-                                                <option value="">1级</option>
-                                                <option value="">2级</option>
-                                                <option value="">3级</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="control-label">主治医生</label>
-                                            <select class="form-control custom-select">
-                                                <option value="">王小明</option>
-                                                <option value="">张大礼</option>
-                                                <option value="">李明明</option>
-                                                <option value="">赵力</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--3rd line-->
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="control-label">入住科室</label>
-                                            <select class="form-control custom-select"
-                                                data-placeholder="Choose a Category" tabindex="1">
-                                                <option value="Category 1">心血管外科</option>
-                                                <option value="Category 2">心血管内科</option>
-                                                <option value="Category 3">消化科</option>
-                                                <option value="Category 4">内科</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group mt-5">
-                                    <h4 class="card-title">选择需要使用的设备与设备ID</h4>
+                                <div class="form-group">
+                                    <h4 class="card-title">选择并确认需要退还的设备及其ID</h4>
                                     <hr>
                                     <div class="input-group">
                                         <ul class="icheck-list row col-12">
                                             <li class="col">
                                                 <input type="checkbox" class="check" id="minimal-checkbox-1" checked>
-                                                <label for="minimal-checkbox-1">血压监测终端</label>
-                                                <input type="text" id="BPID" class="form-control form-control-danger"
-                                                placeholder="例如：BP0001">
+                                                <label for="minimal-checkbox-1">血压监测终端 ID:</label>
+                                                <label for="minimal-checkbox-2">BP0001</label>
                                             </li>
                                             <li class="col">
                                                 <input type="checkbox" class="check" id="minimal-checkbox-2" checked>
-                                                <label for="minimal-checkbox-2">血氧监测仪</label>
-                                                <input type="text" id="SPO2ID" class="form-control form-control-danger"
-                                                placeholder="例如：SPO20001">
+                                                <label for="minimal-checkbox-2">血氧监测仪 ID:</label>
+                                                <label for="minimal-checkbox-2">SPO20001</label>
                                             </li>
                                             <li class="col">
                                                 <input type="checkbox" class="check" id="minimal-checkbox-2" checked>
-                                                <label for="minimal-checkbox-2">心率监护仪</label>
-                                                <input type="text" id="ECGID" class="form-control form-control-danger"
-                                                placeholder="例如：ECG0001">
+                                                <label for="minimal-checkbox-2">心率监护仪 ID:</label>
+                                                <label for="minimal-checkbox-2">ECG0001</label>
                                             </li>
                                             <li class="col">
                                                 <input type="checkbox" class="check" id="minimal-checkbox-2" checked>
-                                                <label for="minimal-checkbox-2">体温检测仪</label>
-                                                <input type="text" id="TEMPID" class="form-control form-control-danger"
-                                                placeholder="例如：TEMP0001">
+                                                <label for="minimal-checkbox-2">体温检测仪 ID:</label>
+                                                <label for="minimal-checkbox-2">TEMP0001</label>
                                             </li>
                                             <li class="col">
                                                 <input type="checkbox" class="check" id="minimal-checkbox-2">
-                                                <label for="minimal-checkbox-2">呼吸监护仪</label>
-                                                <input type="text" id="BTHID" class="form-control form-control-danger"
-                                                placeholder="例如：BTH0001">
+                                                <label for="minimal-checkbox-2">呼吸监护仪 ID:</label>
+                                                <label for="minimal-checkbox-2">BTH0001</label>
                                             </li>
                                             <li class="col">
                                                 <input type="checkbox" class="check" id="minimal-checkbox-2">
-                                                <label for="minimal-checkbox-2">血糖监测仪</label>
-                                                <input type="text" id="BSID" class="form-control form-control-danger"
-                                                placeholder="例如：BLS0001">
+                                                <label for="minimal-checkbox-2">血糖监测仪 ID:</label>
+                                                <label for="minimal-checkbox-2">BLS0001</label>
                                             </li>
                                         </ul>
                                     </div>
@@ -291,7 +179,7 @@
                 </div>
 
                 <a href="nurse-patient.html"><button type="button"
-                        class="btn waves-effect waves-light btn-info">确认添加病人</button></a>
+                        class="btn waves-effect waves-light btn-info">确认出院退床</button></a>
                 <a href="nurse-patient.html"><button type="submit" class="btn btn-secondary">取消</button></a>
             </div>
         </div>
